@@ -38,6 +38,7 @@ def turn(board)
   until counter == 1
     if valid_move?(board, index)
       move(board, index)
+      display_board(board)
       counter += 1
     else
     print "Invalid input, enter correct input: "
